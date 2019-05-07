@@ -4,16 +4,18 @@
   "description": "Promise interfaces for Node",
   "keywords": [
     "promise",
-    "node",
-    "es6"
+    "node"
   ],
   "main": "./index.js",
   "scripts": {
-    "lint": "eslint src",
     "build": "npm run babel",
     "clean": "bash clean.sh",
     "babel": "babel src -d lib",
-    "pre-commit": "npm run lint && npm run babel && git add lib"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+    "pre-commit": "npm run lint && npm run babel && git add lib",
+    "lint": "eslint *.js src",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": {
     "name": "jonathan Perry for Sequence Media Limited",
