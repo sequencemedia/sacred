@@ -1,3 +1,7 @@
-require('babel-register')({})
+require('@babel/register')
 
-module.exports = require('./sacred')
+const {
+  default: sacred
+} = require('./lib')
+
+module.exports = sacred

@@ -1,3 +1,1 @@
-import * as sacred from './lib'
-
-export default sacred
+export { default } from './src'
