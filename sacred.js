@@ -1,1 +1,3 @@
-export { default } from './src'
+import * as sacred from './src'
+
+export default sacred
