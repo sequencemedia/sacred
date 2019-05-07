@@ -6,10 +6,7 @@ module.exports = {
       '@babel/env', {
         useBuiltIns: 'entry',
         targets: {
-          node: 'current',
-          'browsers': [
-            'last 4 versions'
-          ]
+          node: 'current'
         },
         corejs: '3.0.1'
       }
