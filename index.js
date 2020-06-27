@@ -1,5 +1,2 @@
-const {
-  default: sacred
-} = require('./lib')
-
-module.exports = sacred
+//
+module.exports = require('./lib')

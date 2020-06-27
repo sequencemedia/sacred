@@ -4,12 +4,16 @@ module.exports = {
   presets: [
     [
       '@babel/env', {
-        useBuiltIns: 'entry',
+        useBuiltIns: 'usage',
         targets: {
-          node: 'current'
+          node: '12.18.1'
         },
-        corejs: '3.0.1'
+        corejs: 3
       }
     ]
+  ],
+  plugins: [
+    '@babel/proposal-export-default-from',
+    '@babel/proposal-export-namespace-from'
   ]
 }

@@ -7,42 +7,50 @@
     "node"
   ],
   "main": "./index.js",
-  "scripts": {
-    "build": "npm run babel",
-    "clean": "bash clean.sh",
-    "babel": "babel src -d lib",
-    "prepublishOnly": "npm run build",
-    "prepare": "npm run build",
-    "pre-commit": "npm run lint && npm run babel && git add lib",
-    "lint": "eslint *.js src",
-    "lint:fix": "npm run lint -- --fix"
-  },
   "author": {
     "name": "jonathan Perry for Sequence Media Limited",
     "email": "sequencemedia@sequencemedia.net",
     "url": "http://sequencemedia.net"
   },
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.18.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sequencemedia/sacred.git"
   },
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "husky": "^4.2.3"
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "npm run babel",
+    "build:watch": "npm run babel:watch",
+    "clean": "rimraf lib",
+    "babel": "babel src -d lib",
+    "babel:watch": "npm run babel -- -w",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "pre-commit": "npm run lint && npm run build && git add lib"
   },
   "dependencies": {
-    "sacred-fs": "^1.0.15"
+    "sacred-fs": "^1.0.16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-export-default-from": "^7.10.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/register": "^7.10.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.3.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "rimraf": "^3.0.2"
   },
   "husky": {
     "hooks": {
