@@ -1,6 +1,6 @@
 {
   "name": "sacred",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "description": "Promise interfaces for Node",
   "keywords": [
     "promise",
@@ -34,7 +34,7 @@
     "pre-commit": "npm run lint && npm run build && git add lib && npm run gulp -- pre-commit"
   },
   "dependencies": {
-    "sacred-fs": "^1.2.34"
+    "sacred-fs": "^1.2.35"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
