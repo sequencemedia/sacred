@@ -1,6 +1,6 @@
 {
   "name": "sacred",
-  "version": "1.0.44",
+  "version": "1.0.45",
   "description": "Promise interfaces for Node",
   "keywords": [
     "promise",
@@ -34,7 +34,7 @@
     "pre-commit": "npm run lint && npm run build && git add lib && npm run gulp -- pre-commit"
   },
   "dependencies": {
-    "sacred-fs": "^1.2.39"
+    "sacred-fs": "^1.2.40"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
@@ -42,7 +42,7 @@
     "@babel/eslint-parser": "^7.16.3",
     "@babel/plugin-proposal-export-default-from": "^7.16.0",
     "@babel/plugin-proposal-export-namespace-from": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@babel/register": "^7.16.0",
     "eslint": "^8.2.0",
     "eslint-config-standard": "^16.0.3",
