@@ -4,9 +4,9 @@ import {
   exec
 } from 'child_process'
 
-const log = debug('sacred:build:gulp:pre-commit')
+const log = debug('@sequencemedia/sacred:build:gulp:pre-commit')
 
-log('`sacred` is awake')
+log('`@sequencemedia/sacred` is awake')
 
 const PACKAGE_VERSION_CHANGES = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
 
