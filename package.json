@@ -1,6 +1,6 @@
 {
   "name": "sacred",
-  "version": "1.0.161",
+  "version": "1.0.162",
   "description": "Promise interfaces for Node",
   "keywords": [
     "promise",
