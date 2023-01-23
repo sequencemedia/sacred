@@ -1,6 +1,6 @@
 {
   "name": "sacred",
-  "version": "1.1.198",
+  "version": "1.1.199",
   "description": "Promise interfaces for Node",
   "keywords": [
     "promise",
@@ -35,7 +35,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "sacred-fs": "^1.3.170"
+    "sacred-fs": "^1.3.171"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
